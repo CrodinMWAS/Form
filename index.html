@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Űrlap</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js"></script>
+</head>
+<body>
+    <div>
+        <form action="">
+            <label for="Mname">Megrendelő Neve:</label>
+            <input type="text" name="Mname" id="inp1" onfocus="klikk(inp1)" onblur="off(inp1)"><br>
+            <label for="Mloc">Megrendelő Címe:</label>
+            <input type="text" name="Mloc" id="inp2" onfocus="klikk(inp2)" onblur="off(inp2)"><br>
+            <label for="Mnum">Megrendelő Telefonszáma:</label>
+            <input type="text" name="Mnum" value="36+" id="inp3" onfocus="klikk(inp3)" onblur="off(inp3)">
+
+            <input type="button" value="Elküld" onclick="elkuld()">
+        </form>
+    </div>
+    <div>
+        <h2>Visszaigazolás</h2>
+        <p>Név: <span id="p1">?</span><br>
+        Cím:<span id="p2">?</span><br>
+        Telefon:<span id="p3">?</span></p>
+    </div>
+</body>
+</html>
